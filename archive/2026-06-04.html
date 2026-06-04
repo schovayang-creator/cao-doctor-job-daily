@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>曹博士夜间岗位检索 2026-06-04</title>
+  <style>
+    :root {
+      --bg: #f4efe8;
+      --ink: #18212b;
+      --soft: #6e737a;
+      --panel: #fffdf9;
+      --line: #d8cfc1;
+      --accent: #0e6b58;
+      --accent-2: #b55a2a;
+    }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(14,107,88,0.12), transparent 32%),
+        radial-gradient(circle at top right, rgba(181,90,42,0.12), transparent 28%),
+        var(--bg);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(14,107,88,0.95), rgba(24,33,43,0.92));
+      color: white;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 60px rgba(24,33,43,0.18);
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+    }
+    .hero p {
+      margin: 6px 0;
+      color: rgba(255,255,255,0.86);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+    .label {
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    .value {
+      margin-top: 6px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 20px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 12px 30px rgba(24,33,43,0.06);
+    }
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      color: var(--soft);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 10px 8px;
+      vertical-align: top;
+    }
+    th {
+      color: var(--soft);
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      background: var(--panel);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    @media (max-width: 760px) {
+      .hero h1 { font-size: 24px; }
+      table { display: block; overflow-x: auto; white-space: nowrap; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>曹博士夜间岗位检索看板</h1>
+      <p>日期：2026-06-04</p>
+      <p>公开地址：<a href="https://schovayang-creator.github.io/cao-doctor-job-daily/" style="color:#fff;text-decoration:underline">https://schovayang-creator.github.io/cao-doctor-job-daily/</a></p>
+      <div class="grid"><div class="card"><div class="label">新发布</div><div class="value">0</div></div><div class="card"><div class="label">今日新发现</div><div class="value">3</div></div><div class="card"><div class="label">A/B候选</div><div class="value">0</div></div><div class="card"><div class="label">待核验</div><div class="value">2</div></div><div class="card"><div class="label">排除</div><div class="value">1</div></div></div>
+    </section>
+    <section class="section">
+      <h2>筛选视图</h2>
+      <div class="chips">
+        <span class="chip">新发布</span>
+        <span class="chip">今日新发现</span>
+        <span class="chip">A/B候选</span>
+        <span class="chip">待核验</span>
+        <span class="chip">排除</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>分类</th>
+            <th>等级</th>
+            <th>城市</th>
+            <th>单位</th>
+            <th>部门</th>
+            <th>岗位</th>
+            <th>发布日期</th>
+            <th>截止</th>
+            <th>投递方式</th>
+            <th>来源类型</th>
+            <th>风险</th>
+            <th>key_hash</th>
+            <th>链接</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>今日新发现</td><td>A</td><td>南京</td><td>南京市鼓楼区疾病预防控制中心</td><td>待附件岗位表</td><td>编制内专业技术人员（公告称共 5 名）</td><td>2026-05-28</td><td>2026-06-09 16:00</td><td>南京人事考试网 www.njrsks.net 网上报名</td><td>district_health_committee_official</td><td>岗位信息表未能稳定下载，暂缺具体专业代码、岗位方向和联系人分岗信息。</td><td>9f7afe8086</td><td><a href="https://www.njgl.gov.cn/glzx/gstg/zfbm/quweijiju/202605/t20260528_5848321.html" target="_blank" rel="noreferrer">来源</a></td></tr>
+<tr><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>高层次人才统招</td><td>2026 年高层次人才招聘启事（学校统招）</td><td>2026-03-25</td><td>未写明；疑似长期招聘</td><td>个人简历与证明材料发送至 dmu_hrd@163.com，邮件命名“姓名+应聘岗位+毕业学校（或现工作单位）”</td><td>university_hr_official</td><td>公告主体偏泛化，非单一明确岗位；多条岗位要求高级职称或高门槛成果，短期不宜直接计入正式新增。</td><td>ba34cc11d0</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2136.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
+<tr><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>肿瘤干细胞研究院 / 药学院等课题组</td><td>教师（科研助理）</td><td>2026-03-25</td><td>未写明</td><td>课题组联系人电话咨询；学校招聘工作联系人赵老师 0411-86110048</td><td>university_hr_official</td><td>岗位性质明确为科研助理/研究助理，命中夜间检索排除规则，不计入正式新增。</td><td>aee07f9427</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2135.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

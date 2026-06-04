@@ -1,0 +1,72 @@
+{
+  "run_date": "2026-06-04",
+  "counts": {
+    "新发布": 0,
+    "今日新发现": 3,
+    "A/B候选": 0,
+    "待核验": 2,
+    "排除": 1
+  },
+  "rows": [
+    {
+      "date_found": "2026-06-04",
+      "category": "今日新发现",
+      "level": "A",
+      "city": "南京",
+      "organization": "南京市鼓楼区疾病预防控制中心",
+      "department": "待附件岗位表",
+      "job_title": "编制内专业技术人员（公告称共 5 名）",
+      "requirements": "正式编制；2026 届毕业生可报；具体专业与方向需以岗位信息表为准。",
+      "posted_date": "2026-05-28",
+      "deadline": "2026-06-09 16:00",
+      "application_route": "南京人事考试网 www.njrsks.net 网上报名",
+      "source_url": "https://www.njgl.gov.cn/glzx/gstg/zfbm/quweijiju/202605/t20260528_5848321.html",
+      "source_type": "district_health_committee_official",
+      "evidence": "鼓楼区人民政府官网公告可访问；公告明确发布于 2026-05-28 16:25，报名时间 2026-06-04 09:00 至 2026-06-09 16:00，附件岗位表存在但直链下载受站点防护限制。",
+      "suitability_reason": "疾控正式编制且公告明确接受 2026 届，方向与曹博士的病原/公共卫生主线高度相关。",
+      "risks": "岗位信息表未能稳定下载，暂缺具体专业代码、岗位方向和联系人分岗信息。",
+      "key_hash": "9f7afe8086",
+      "status": "pending"
+    },
+    {
+      "date_found": "2026-06-04",
+      "category": "今日新发现",
+      "level": "B",
+      "city": "大连",
+      "organization": "大连医科大学",
+      "department": "高层次人才统招",
+      "job_title": "2026 年高层次人才招聘启事（学校统招）",
+      "requirements": "博士；医学类/生物学类等；多岗位要求高级职称、国家级项目经历或一区论文，具体岗位需按正文逐项二次确认。",
+      "posted_date": "2026-03-25",
+      "deadline": "未写明；疑似长期招聘",
+      "application_route": "个人简历与证明材料发送至 dmu_hrd@163.com，邮件命名“姓名+应聘岗位+毕业学校（或现工作单位）”",
+      "source_url": "https://rlzyb.dmu.edu.cn/info/1169/2136.htm",
+      "source_type": "university_hr_official",
+      "evidence": "大连医科大学党委教师工作部（人事处）官网，发布时间 2026-03-25；正文给出应聘邮箱和联系人时老师 0411-86110045。",
+      "suitability_reason": "学校平台强，正文明确覆盖基础医学/生物学相关高层次方向，存在后续可人工二次筛选空间。",
+      "risks": "公告主体偏泛化，非单一明确岗位；多条岗位要求高级职称或高门槛成果，短期不宜直接计入正式新增。",
+      "key_hash": "ba34cc11d0",
+      "status": "pending"
+    },
+    {
+      "date_found": "2026-06-04",
+      "category": "今日新发现",
+      "level": "B",
+      "city": "大连",
+      "organization": "大连医科大学",
+      "department": "肿瘤干细胞研究院 / 药学院等课题组",
+      "job_title": "教师（科研助理）",
+      "requirements": "生命科学、医学、药学及相关专业；多课题组要求 SCI 论文经验；待遇面议。",
+      "posted_date": "2026-03-25",
+      "deadline": "未写明",
+      "application_route": "课题组联系人电话咨询；学校招聘工作联系人赵老师 0411-86110048",
+      "source_url": "https://rlzyb.dmu.edu.cn/info/1169/2135.htm",
+      "source_type": "university_hr_official",
+      "evidence": "大连医科大学人事处官网，发布时间 2026-03-25；正文表格明确岗位名称为“教师（科研助理）”。",
+      "suitability_reason": "平台和学术方向有一定相关性。",
+      "risks": "岗位性质明确为科研助理/研究助理，命中夜间检索排除规则，不计入正式新增。",
+      "key_hash": "aee07f9427",
+      "status": "excluded"
+    }
+  ]
+}
