@@ -90,6 +90,13 @@
       padding: 8px 12px;
       font-size: 13px;
       color: var(--soft);
+      background: transparent;
+      cursor: pointer;
+    }
+    .chip.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
     }
     table {
       width: 100%;
@@ -113,6 +120,28 @@
       color: var(--accent);
       text-decoration: none;
     }
+    .lists {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .listbox {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+    .listbox h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+    .listbox ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.9);
+    }
     @media (max-width: 760px) {
       .hero h1 { font-size: 24px; }
       table { display: block; overflow-x: auto; white-space: nowrap; }
@@ -126,15 +155,26 @@
       <p>日期：2026-06-04</p>
       <p>公开地址：<a href="https://schovayang-creator.github.io/cao-doctor-job-daily/" style="color:#fff;text-decoration:underline">https://schovayang-creator.github.io/cao-doctor-job-daily/</a></p>
       <div class="grid"><div class="card"><div class="label">新发布</div><div class="value">0</div></div><div class="card"><div class="label">今日新发现</div><div class="value">3</div></div><div class="card"><div class="label">A/B候选</div><div class="value">0</div></div><div class="card"><div class="label">待核验</div><div class="value">2</div></div><div class="card"><div class="label">排除</div><div class="value">1</div></div></div>
+      <div class="lists">
+        <div class="listbox">
+          <h3>Top A/B</h3>
+          <ul><li>今日无正式 A/B 新增。</li></ul>
+        </div>
+        <div class="listbox">
+          <h3>待核验</h3>
+          <ul><li><strong>南京市鼓楼区疾病预防控制中心</strong>｜编制内专业技术人员（公告称共 5 名）｜岗位信息表未能稳定下载，暂缺具体专业代码、岗位方向和联系人分岗信息。</li><li><strong>大连医科大学</strong>｜2026 年高层次人才招聘启事（学校统招）｜公告主体偏泛化，非单一明确岗位；多条岗位要求高级职称或高门槛成果，短期不宜直接计入正式新增。</li></ul>
+        </div>
+      </div>
     </section>
     <section class="section">
       <h2>筛选视图</h2>
       <div class="chips">
-        <span class="chip">新发布</span>
-        <span class="chip">今日新发现</span>
-        <span class="chip">A/B候选</span>
-        <span class="chip">待核验</span>
-        <span class="chip">排除</span>
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="新发布">新发布</button>
+        <button class="chip" data-filter="今日新发现">今日新发现</button>
+        <button class="chip" data-filter="candidate">A/B候选</button>
+        <button class="chip" data-filter="pending">待核验</button>
+        <button class="chip" data-filter="excluded">排除</button>
       </div>
       <table>
         <thead>
@@ -155,12 +195,29 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>今日新发现</td><td>A</td><td>南京</td><td>南京市鼓楼区疾病预防控制中心</td><td>待附件岗位表</td><td>编制内专业技术人员（公告称共 5 名）</td><td>2026-05-28</td><td>2026-06-09 16:00</td><td>南京人事考试网 www.njrsks.net 网上报名</td><td>district_health_committee_official</td><td>岗位信息表未能稳定下载，暂缺具体专业代码、岗位方向和联系人分岗信息。</td><td>9f7afe8086</td><td><a href="https://www.njgl.gov.cn/glzx/gstg/zfbm/quweijiju/202605/t20260528_5848321.html" target="_blank" rel="noreferrer">来源</a></td></tr>
-<tr><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>高层次人才统招</td><td>2026 年高层次人才招聘启事（学校统招）</td><td>2026-03-25</td><td>未写明；疑似长期招聘</td><td>个人简历与证明材料发送至 dmu_hrd@163.com，邮件命名“姓名+应聘岗位+毕业学校（或现工作单位）”</td><td>university_hr_official</td><td>公告主体偏泛化，非单一明确岗位；多条岗位要求高级职称或高门槛成果，短期不宜直接计入正式新增。</td><td>ba34cc11d0</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2136.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
-<tr><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>肿瘤干细胞研究院 / 药学院等课题组</td><td>教师（科研助理）</td><td>2026-03-25</td><td>未写明</td><td>课题组联系人电话咨询；学校招聘工作联系人赵老师 0411-86110048</td><td>university_hr_official</td><td>岗位性质明确为科研助理/研究助理，命中夜间检索排除规则，不计入正式新增。</td><td>aee07f9427</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2135.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
+          <tr data-category="今日新发现" data-status="pending"><td>今日新发现</td><td>A</td><td>南京</td><td>南京市鼓楼区疾病预防控制中心</td><td>待附件岗位表</td><td>编制内专业技术人员（公告称共 5 名）</td><td>2026-05-28</td><td>2026-06-09 16:00</td><td>南京人事考试网 www.njrsks.net 网上报名</td><td>district_health_committee_official</td><td>岗位信息表未能稳定下载，暂缺具体专业代码、岗位方向和联系人分岗信息。</td><td>9f7afe8086</td><td><a href="https://www.njgl.gov.cn/glzx/gstg/zfbm/quweijiju/202605/t20260528_5848321.html" target="_blank" rel="noreferrer">来源</a></td></tr>
+<tr data-category="今日新发现" data-status="pending"><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>高层次人才统招</td><td>2026 年高层次人才招聘启事（学校统招）</td><td>2026-03-25</td><td>未写明；疑似长期招聘</td><td>个人简历与证明材料发送至 dmu_hrd@163.com，邮件命名“姓名+应聘岗位+毕业学校（或现工作单位）”</td><td>university_hr_official</td><td>公告主体偏泛化，非单一明确岗位；多条岗位要求高级职称或高门槛成果，短期不宜直接计入正式新增。</td><td>ba34cc11d0</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2136.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
+<tr data-category="今日新发现" data-status="excluded"><td>今日新发现</td><td>B</td><td>大连</td><td>大连医科大学</td><td>肿瘤干细胞研究院 / 药学院等课题组</td><td>教师（科研助理）</td><td>2026-03-25</td><td>未写明</td><td>课题组联系人电话咨询；学校招聘工作联系人赵老师 0411-86110048</td><td>university_hr_official</td><td>岗位性质明确为科研助理/研究助理，命中夜间检索排除规则，不计入正式新增。</td><td>aee07f9427</td><td><a href="https://rlzyb.dmu.edu.cn/info/1169/2135.htm" target="_blank" rel="noreferrer">来源</a></td></tr>
         </tbody>
       </table>
     </section>
   </div>
+  <script>
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    const tableRows = Array.from(document.querySelectorAll('tbody tr'));
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((item) => item.classList.remove('active'));
+        chip.classList.add('active');
+        const filter = chip.dataset.filter;
+        tableRows.forEach((row) => {
+          const category = row.dataset.category;
+          const status = row.dataset.status;
+          const show = filter === 'all' || category === filter || status === filter;
+          row.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
