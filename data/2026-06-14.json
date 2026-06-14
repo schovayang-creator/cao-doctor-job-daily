@@ -1,0 +1,72 @@
+{
+  "run_date": "2026-06-14",
+  "counts": {
+    "新发布": 0,
+    "今日新发现": 0,
+    "A/B候选": 0,
+    "待核验": 0,
+    "排除": 6
+  },
+  "rows": [
+    {
+      "date_found": "2026-06-14",
+      "category": "排除",
+      "level": "A",
+      "city": "湖南怀化",
+      "organization": "湖南医药学院",
+      "department": "医学检验学院",
+      "job_title": "专任教师 A06",
+      "requirements": "博士研究生；专业含 0703 化学、0710 生物学、1001 基础医学、1002/1051 临床医学；38周岁及以下。",
+      "posted_date": "2026-06-11 17:44:03",
+      "deadline": "A类岗位自公告发布之日至2026-12-31；随到随招，招满即止。",
+      "application_route": "邮箱报名 346622629@qq.com；资格审查通过后直接考核。",
+      "source_url": "https://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202606/t20260611_33999415.html",
+      "source_type": "university_hr_official",
+      "evidence": "2026-06-14 live HTTP 200；页面 Meta 发布时间为 2026-06-11 17:44:03；正文可见 A06 岗位报名邮箱 346622629@qq.com。",
+      "suitability_reason": "医学检验学院正式专任教师岗，专业目录直接覆盖生物学和基础医学，与曹博士病原生物学博士训练和检测平台经历高度相关。",
+      "risks": "命中夜间检索 state/seen-jobs 历史已见记录（2026-06-12 已计入候选），本轮不重复计数。",
+      "key_hash": "2a9d1e6566",
+      "status": "excluded"
+    },
+    {
+      "date_found": "2026-06-14",
+      "category": "排除",
+      "level": "B",
+      "city": "湖南怀化",
+      "organization": "湖南医药学院",
+      "department": "基础医学院",
+      "job_title": "专任教师 A02",
+      "requirements": "博士研究生；专业含 0710 生物学、10 医学；38周岁及以下。",
+      "posted_date": "2026-06-11 17:44:03",
+      "deadline": "A类岗位自公告发布之日至2026-12-31；随到随招，招满即止。",
+      "application_route": "邮箱报名 48220986@qq.com；资格审查通过后直接考核。",
+      "source_url": "https://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202606/t20260611_33999415.html",
+      "source_type": "university_hr_official",
+      "evidence": "2026-06-14 live HTTP 200；页面 Meta 发布时间为 2026-06-11 17:44:03；正文可见 A02 岗位报名邮箱 48220986@qq.com。",
+      "suitability_reason": "基础医学院正式教师岗，生物学/医学口径宽，对病原生物学博士仍有较强承接性。",
+      "risks": "命中夜间检索 state/seen-jobs 历史已见记录（2026-06-12 已标待核验），本轮不重复计数。",
+      "key_hash": "dc8ba1f617",
+      "status": "excluded"
+    },
+    {
+      "date_found": "2026-06-14",
+      "category": "排除",
+      "level": "A",
+      "city": "乌鲁木齐",
+      "organization": "新疆维吾尔自治区人民医院",
+      "department": "新疆肿瘤微环境稳态重塑与靶向干预重点实验室",
+      "job_title": "助理研究员",
+      "requirements": "研究生及以上；博士；专业类别研究生-(0710)生物学；全国户籍。",
+      "posted_date": "2026-03-18 18:05:07",
+      "deadline": "2026-04-03；已截止。",
+      "application_route": "新疆卫生健康人才发展中心综合服务平台 https://www.xjwsrc.cn；自治区人民医院指定邮箱 RMYYhr1@163.com，并按公告要求现场审核。",
+      "source_url": "https://wjw.xinjiang.gov.cn/hfpc/rsxx/202603/088cba8522784f2fa086471157419fd2.shtml",
+      "source_type": "gov_or_hospital_official",
+      "evidence": "2026-06-14 live 抓取官方页；Meta 发布时间为 2026-03-18 18:05:07；附件岗位表第 11 行列出该岗位，报名时间为 2026-03-19 至 2026-04-03。",
+      "suitability_reason": "生物学博士研究岗与曹博士实验室和病原科研训练高度相关。",
+      "risks": "命中 14 查重索引硬排重基线（已计入强推荐）且公告报名期已过，本轮不重复计数。",
+      "key_hash": "5be645ed80",
+      "status": "excluded"
+    }
+  ]
+}
