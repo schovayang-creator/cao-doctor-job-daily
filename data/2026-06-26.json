@@ -1,0 +1,72 @@
+{
+  "run_date": "2026-06-26",
+  "counts": {
+    "新发布": 1,
+    "今日新发现": 2,
+    "A/B候选": 0,
+    "待核验": 1,
+    "排除": 2
+  },
+  "rows": [
+    {
+      "date_found": "2026-06-26",
+      "category": "新发布",
+      "level": "B",
+      "city": "上海",
+      "organization": "上海市农产品质量安全中心",
+      "department": "风险预警与数据分析方向",
+      "job_title": "工程师",
+      "requirements": "应届博士，38周岁及以下；专业限计算机科学与技术、电子信息（人工智能/大数据技术与工程）、农业工程与信息技术、食品科学与工程、分析化学、药物化学。",
+      "posted_date": "2026-06-26",
+      "deadline": "2026-07-10 17:00",
+      "application_route": "邮件报名至 shnonganzp@163.com，主题“博士招聘+姓名”",
+      "source_url": "https://rsj.sh.gov.cn/tzpgg_17408/20260626/t0035_1441803.html",
+      "source_type": "municipal_hr_official_notice",
+      "evidence": "上海人社 2026-06-26 招聘公告与附件简章均可访问；附件岗位表显示唯一岗位为工程师，研究方向为农产品质量安全智能风险预警、高通量筛查与数据分析。",
+      "suitability_reason": "属于正式事业编博士岗位，公告时间新，字段完整。",
+      "risks": "附件专业要求不含病原生物学、基础医学或免疫/微生物学，研究主题偏农产品质量安全、AI 和分析化学，不符合曹博士主线，按规则排除。",
+      "status": "excluded",
+      "key_hash": "23f726a4fa"
+    },
+    {
+      "date_found": "2026-06-26",
+      "category": "今日新发现",
+      "level": "B",
+      "city": "上海",
+      "organization": "上海市第六人民医院",
+      "department": "未细分科研平台",
+      "job_title": "医学科研岗位",
+      "requirements": "博士及以上学位；科研基础好，熟练掌握相关实验技术；有高质量 SCI 论文或主持科研项目经历者优先。",
+      "posted_date": "2026-06-23",
+      "deadline": "2026-07-03",
+      "application_route": "邮件投递个人简历、学历证明及资格证书至 rsc6th@163.com",
+      "source_url": "https://rsj.sh.gov.cn/tzpgg_17408/20260623/t0035_1441676.html",
+      "source_type": "municipal_hr_official_hospital",
+      "evidence": "上海人社发布的上海市第六人民医院公开招聘公告明确列出医学科研岗位 2 名，报名截至 2026-07-03，投递邮箱和联系电话齐全。",
+      "suitability_reason": "三级甲等综合医院正式医学科研岗，博士学历和实验技能要求与曹博士科研训练有交叉。",
+      "risks": "公告未细分科室、研究方向和专业代码；历史基线中已有上海市第六人民医院专职科研相关记录，需人工确认本轮“医学科研岗位”是否为独立新岗、是否接受病原生物学博士。",
+      "status": "pending",
+      "key_hash": "1db4ff8e59"
+    },
+    {
+      "date_found": "2026-06-26",
+      "category": "今日新发现",
+      "level": "B",
+      "city": "上海",
+      "organization": "上海中医药大学附属岳阳中西医结合医院松江分院",
+      "department": "松江分院",
+      "job_title": "临床科研人才储备岗位",
+      "requirements": "相关专业含临床医学、中医学、药学、生物学；要求在专业领域有一定学术影响，博士后经历优先，主持国家重大专项或成果转化经费 500 万以上经历者优先。",
+      "posted_date": "2026-06-23",
+      "deadline": "2026-07-02 17:00",
+      "application_route": "按公告顺序整理材料后邮件发送至 yyyyrsc@163.com",
+      "source_url": "https://rsj.sh.gov.cn/tzpgg_17408/20260623/t0035_1441671.html",
+      "source_type": "municipal_hr_official_hospital",
+      "evidence": "上海人社 2026-06-23 招聘公告明确写明松江分院临床科研人才储备 1 名，报名截止 2026-07-02 17:00，材料清单完整。",
+      "suitability_reason": "属于正式医院科研储备岗位，生物学被写入相关专业范围。",
+      "risks": "岗位描述明显偏临床科研储备和高门槛转化人才，要求学术影响与重大项目/高额成果转化经历，和曹博士当前画像不匹配，按规则排除。",
+      "status": "excluded",
+      "key_hash": "0f4279bc11"
+    }
+  ]
+}
