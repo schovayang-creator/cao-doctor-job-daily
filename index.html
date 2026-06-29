@@ -3,269 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>曹博士夜间岗位检索 2026-06-27</title>
+  <title>曹博士岗位日报站点</title>
   <style>
-    :root {
-      --bg: #f4efe8;
-      --ink: #18212b;
-      --soft: #6e737a;
-      --panel: #fffdf9;
-      --line: #d8cfc1;
-      --accent: #0e6b58;
-      --accent-2: #b55a2a;
-    }
-    body {
-      margin: 0;
-      font-family: "PingFang SC", "Noto Sans SC", sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(14,107,88,0.12), transparent 32%),
-        radial-gradient(circle at top right, rgba(181,90,42,0.12), transparent 28%),
-        var(--bg);
-      color: var(--ink);
-    }
-    .wrap {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 24px 16px 56px;
-    }
-    .hero {
-      background: linear-gradient(135deg, rgba(14,107,88,0.95), rgba(24,33,43,0.92));
-      color: white;
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 18px 60px rgba(24,33,43,0.18);
-    }
-    .hero h1 {
-      margin: 0 0 8px;
-      font-size: 32px;
-    }
-    .hero p {
-      margin: 6px 0;
-      color: rgba(255,255,255,0.86);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 12px;
-      margin-top: 18px;
-    }
-    .card {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 18px;
-      padding: 14px 16px;
-    }
-    .label {
-      font-size: 12px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      opacity: 0.8;
-    }
-    .value {
-      margin-top: 6px;
-      font-size: 28px;
-      font-weight: 700;
-    }
-    .section {
-      margin-top: 20px;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 20px;
-      box-shadow: 0 12px 30px rgba(24,33,43,0.06);
-    }
-    .section h2 {
-      margin: 0 0 12px;
-      font-size: 20px;
-    }
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 14px;
-    }
-    .chip {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 13px;
-      color: var(--soft);
-      background: transparent;
-      cursor: pointer;
-    }
-    .chip.active {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-    }
-    th, td {
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      padding: 10px 8px;
-      vertical-align: top;
-    }
-    th {
-      color: var(--soft);
-      font-weight: 600;
-      position: sticky;
-      top: 0;
-      background: var(--panel);
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .lists {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 14px;
-      margin-top: 18px;
-    }
-    .listbox {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 18px;
-      padding: 14px 16px;
-    }
-    .listbox h3 {
-      margin: 0 0 10px;
-      font-size: 15px;
-    }
-    .listbox ul {
-      margin: 0;
-      padding-left: 18px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.9);
-    }
-    .brief {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 18px;
-    }
-    .brief-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px 18px;
-    }
-    .brief-card h3 {
-      margin: 0 0 8px;
-      font-size: 16px;
-    }
-    .brief-card p, .brief-card li {
-      color: var(--soft);
-      line-height: 1.65;
-    }
-    .brief-card ul {
-      margin: 0;
-      padding-left: 18px;
-    }
-    @media (max-width: 760px) {
-      .hero h1 { font-size: 24px; }
-      table { display: block; overflow-x: auto; white-space: nowrap; }
-    }
+    body { margin: 0; font-family: "PingFang SC", "Noto Sans SC", sans-serif; background: #f4efe8; color: #18212b; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 28px 16px 48px; }
+    .hero { background: linear-gradient(135deg, #0e6b58, #18212b); color: white; border-radius: 24px; padding: 26px; }
+    .hero h1 { margin: 0 0 8px; font-size: 30px; }
+    .hero p { margin: 6px 0; color: rgba(255,255,255,0.9); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 18px; }
+    .card { background: rgba(255,255,255,0.12); border-radius: 16px; padding: 14px; }
+    .card .v { font-size: 24px; font-weight: 700; margin-top: 6px; }
+    .section { margin-top: 18px; background: #fffdf9; border: 1px solid #d8cfc1; border-radius: 20px; padding: 18px; }
+    a { color: #0e6b58; text-decoration: none; }
+    ul { line-height: 1.7; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <h1>曹博士夜间岗位检索看板</h1>
-      <p>日期：2026-06-27</p>
-      <p>今晚没有新增正式 A/B 候选，保留 0 条待核验线索并排除 4 条不合格或重复岗位。</p>
-      <p>公开地址：<a href="https://schovayang-creator.github.io/cao-doctor-job-daily/archive/2026-06-27.html" style="color:#fff;text-decoration:underline">https://schovayang-creator.github.io/cao-doctor-job-daily/archive/2026-06-27.html</a></p>
-      <div class="grid"><div class="card"><div class="label">新发布</div><div class="value">0</div></div><div class="card"><div class="label">今日新发现</div><div class="value">4</div></div><div class="card"><div class="label">A/B候选</div><div class="value">0</div></div><div class="card"><div class="label">待核验</div><div class="value">0</div></div><div class="card"><div class="label">排除</div><div class="value">4</div></div></div>
-      <div class="lists">
-        <div class="listbox">
-          <h3>Top A/B</h3>
-          <ul><li>今日无正式 A/B 新增。</li></ul>
-        </div>
-        <div class="listbox">
-          <h3>待核验</h3>
-          <ul><li>无。</li></ul>
-        </div>
+      <h1>曹博士岗位日报站点</h1>
+      <p>最新日期：2026-06-29</p>
+      <p>今晚新发现 5 条岗位线索，但全部排除，未形成新增 A/B 候选。</p>
+      <p><a href="archive/2026-06-29.html" style="color:#fff;text-decoration:underline">打开当天看板</a></p>
+      <div class="grid">
+        <div class="card"><div>新发布</div><div class="v">0</div></div>
+        <div class="card"><div>今日新发现</div><div class="v">5</div></div>
+        <div class="card"><div>A/B候选</div><div class="v">0</div></div>
+        <div class="card"><div>待核验</div><div class="v">0</div></div>
+        <div class="card"><div>排除</div><div class="v">5</div></div>
       </div>
     </section>
     <section class="section">
-      <h2>3 分钟简报</h2>
-      <div class="brief">
-        <div class="brief-card">
-          <h3>今天结论</h3>
-          <p>今晚没有新增正式 A/B 候选，保留 0 条待核验线索并排除 4 条不合格或重复岗位。</p>
-        </div>
-        <div class="brief-card">
-          <h3>今日重点</h3>
-          <ul><li>本轮共核到 0 条新发布岗位、4 条今日新发现线索。</li><li>今晚没有形成可直接推进的正式候选，重心放在排除重复和保留待核验项。</li><li>当前待核验缺口较少，下一轮可转向补抓全新公告。</li><li>今天不需要自动投递或联系单位，只有在人工决定后才继续核验或推进。</li></ul>
-        </div>
-        <div class="brief-card">
-          <h3>风险和缺口</h3>
-          <p>当前没有高优先待核验缺口，下一轮继续补抓新公告。</p>
-        </div>
-        <div class="brief-card">
-          <h3>下一步</h3>
-          <p>继续搜索今天之后的新公告，并维持严格查重。</p>
-          <p><a href="https://schovayang-creator.github.io/cao-doctor-job-daily/archive/2026-06-27.html" target="_blank" rel="noreferrer">公开入口</a></p>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <h2>筛选视图</h2>
-      <div class="chips">
-        <button class="chip active" data-filter="all">全部</button>
-        <button class="chip" data-filter="新发布">新发布</button>
-        <button class="chip" data-filter="今日新发现">今日新发现</button>
-        <button class="chip" data-filter="candidate">A/B候选</button>
-        <button class="chip" data-filter="pending">待核验</button>
-        <button class="chip" data-filter="excluded">排除</button>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>分类</th>
-            <th>等级</th>
-            <th>城市</th>
-            <th>单位</th>
-            <th>部门</th>
-            <th>岗位</th>
-            <th>发布日期</th>
-            <th>截止</th>
-            <th>投递方式</th>
-            <th>来源类型</th>
-            <th>风险</th>
-            <th>key_hash</th>
-            <th>链接</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-category="今日新发现" data-status="excluded"><td>今日新发现</td><td>B</td><td>北京</td><td>首都医科大学附属北京儿童医院</td><td>儿研-院士办公室</td><td>科研岗</td><td>2026-06-10</td><td>2026-06-21</td><td>登录北京儿童医院招聘网站 http://bch.zhiye.com 在线填写简历并投递相关岗位；公告报名截止 2026-06-21。</td><td>municipal_hr_official_hospital</td><td>岗位要求北京市常住户口、中级职称和5年以上科研经验，且报名已于2026-06-21截止；14索引已存在北京儿童医院儿研-院士办公室科研/科研岗记录。</td><td>79a44d7eb0</td><td><a href="https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html" target="_blank" rel="noreferrer">来源</a></td></tr>
-<tr data-category="今日新发现" data-status="excluded"><td>今日新发现</td><td>B</td><td>北京</td><td>首都医科大学附属北京儿童医院</td><td>儿研-代谢疾病研究室</td><td>科研岗</td><td>2026-06-10</td><td>2026-06-21</td><td>登录北京儿童医院招聘网站 http://bch.zhiye.com 在线填写简历并投递相关岗位；公告报名截止 2026-06-21。</td><td>municipal_hr_official_hospital</td><td>岗位明确仅限2026年出站博士后，且报名已于2026-06-21截止，不符合夜间检索正式岗口径。</td><td>9314e7431a</td><td><a href="https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html" target="_blank" rel="noreferrer">来源</a></td></tr>
-<tr data-category="今日新发现" data-status="excluded"><td>今日新发现</td><td>B</td><td>北京</td><td>首都医科大学附属北京儿童医院</td><td>骨科</td><td>科研岗</td><td>2026-06-10</td><td>2026-06-21</td><td>登录北京儿童医院招聘网站 http://bch.zhiye.com 在线填写简历并投递相关岗位；公告报名截止 2026-06-21。</td><td>municipal_hr_official_hospital</td><td>岗位仅限2026年出站博士后，研究方向偏骨科疾病模型，且报名已于2026-06-21截止。</td><td>ea0634a089</td><td><a href="https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html" target="_blank" rel="noreferrer">来源</a></td></tr>
-<tr data-category="今日新发现" data-status="excluded"><td>今日新发现</td><td>B</td><td>北京</td><td>首都医科大学附属北京儿童医院</td><td>国家儿童肿瘤监测中心</td><td>科研岗</td><td>2026-06-10</td><td>2026-06-21</td><td>登录北京儿童医院招聘网站 http://bch.zhiye.com 在线填写简历并投递相关岗位；公告报名截止 2026-06-21。</td><td>municipal_hr_official_hospital</td><td>专业要求统计/流行病统计/公卫，不匹配曹博士病原生物学主线，且报名已于2026-06-21截止。</td><td>1612cdc21e</td><td><a href="https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html" target="_blank" rel="noreferrer">来源</a></td></tr>
-        </tbody>
-      </table>
+      <h2>下载</h2>
+      <ul>
+        <li><a href="archive/2026-06-29.html">当天看板</a></li>
+        <li><a href="data/2026-06-29.csv">CSV</a></li>
+        <li><a href="data/2026-06-29.json">JSON</a></li>
+        <li><a href="archive/index.html">历史归档</a></li>
+      </ul>
     </section>
   </div>
-  <script>
-    const chips = Array.from(document.querySelectorAll('.chip'));
-    const tableRows = Array.from(document.querySelectorAll('tbody tr'));
-    chips.forEach((chip) => {
-      chip.addEventListener('click', () => {
-        chips.forEach((item) => item.classList.remove('active'));
-        chip.classList.add('active');
-        const filter = chip.dataset.filter;
-        tableRows.forEach((row) => {
-          const category = row.dataset.category;
-          const status = row.dataset.status;
-          const show = filter === 'all' || category === filter || status === filter;
-          row.style.display = show ? '' : 'none';
-        });
-      });
-    });
-  </script>
 </body>
 </html>
